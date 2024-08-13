@@ -1,0 +1,19 @@
+.uno{display: grid;
+grid-template-columns: 170px 1fr  ;
+}
+.navbar{
+    background-color: rgb(0, 14, 28);
+  
+}
+.pes:hover{
+    background-color: rgb(104, 97, 137);
+    color: white;
+}
+.pes{
+    color: white;
+}
+.leftvar{
+    color: white;
+    background-color: rgb(35, 85, 135);
+    position: fixed;
+}

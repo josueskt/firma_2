@@ -1,0 +1,249 @@
+
+    <br>
+    <div style=" margin: 0 auto;  ; padding: 1px; border-radius: 10px; width: 500px; text-align: center;">
+    <button (click)="hola()" class="btn" style="background-color: black; color: white; ">Previsualizar<svg xmlns="http://www.w3.org/2000/svg"  style="padding-left: 5px;" width="30" height="30" viewBox="0 0 576 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M288 80c-65.2 0-118.8 29.6-159.9 67.7C89.6 183.5 63 226 49.4 256c13.6 30 40.2 72.5 78.6 108.3C169.2 402.4 222.8 432 288 432s118.8-29.6 159.9-67.7C486.4 328.5 513 286 526.6 256c-13.6-30-40.2-72.5-78.6-108.3C406.8 109.6 353.2 80 288 80zM95.4 112.6C142.5 68.8 207.2 32 288 32s145.5 36.8 192.6 80.6c46.8 43.5 78.1 95.4 93 131.1c3.3 7.9 3.3 16.7 0 24.6c-14.9 35.7-46.2 87.7-93 131.1C433.5 443.2 368.8 480 288 480s-145.5-36.8-192.6-80.6C48.6 356 17.3 304 2.5 268.3c-3.3-7.9-3.3-16.7 0-24.6C17.3 208 48.6 156 95.4 112.6zM288 336c44.2 0 80-35.8 80-80s-35.8-80-80-80c-.7 0-1.3 0-2 0c1.3 5.1 2 10.5 2 16c0 35.3-28.7 64-64 64c-5.5 0-10.9-.7-16-2c0 .7 0 1.3 0 2c0 44.2 35.8 80 80 80zm0-208a128 128 0 1 1 0 256 128 128 0 1 1 0-256z"/></svg></button>
+</div>
+<br>    
+<div class="a4-page">
+    <div class="text-center">
+        <img class="" height="300px"
+            src="https://crssmshushufindi.gob.ec/wp-content/uploads/2022/06/logo-alcaldia-instituciones-adscritas.png"
+            alt="">
+    </div>
+
+    <br>
+    <div class="header " style="text-align: right;">
+        <p class="memo-number"><strong>Memorando Nro.CBM-M-TICS-2024-048</strong></p>
+        <p class="date">Machala, 12 de agosto de 2024</p>
+    </div>
+
+    <div style="display: grid; grid-template-columns: 1fr 3fr ;">
+        <strong>
+            <p>PARA:</p>
+        </strong>
+        <p> Ing. Jacqueline Guzmán
+            Analista de Compras Públicas</p>
+    </div>
+    <br>
+    <div style="display: grid; grid-template-columns: 1fr 3fr ;">
+        <STrong>
+
+            <p>ASUNTO</p>
+        </STrong>
+        <p>
+            PROFORMA ADQUISICION DE REPUESTOS Y MANTENIMIENTO
+            DE LOS SISTEMAS ELECTRONICOS DEL EDIFICIO DEL CUERPO
+            DE BOMBEROS MUNICIPAL DE MACHALA</p>
+    </div>
+    <br>
+    <p style="font-size: 14px;">De mi consideración:</p>
+    <p>
+        En contestación a TRÁMITE N. <input type="text" placeholder="numero de tramite" [(ngModel)]="numero"> fecha <input type="date"
+            [(ngModel)]="fecha">,
+        indico a Ud. que una vez revisada la proforma adjunta, la misma que fue recibida a través
+        de la página del SERCOP, emito el siguiente detalle:
+    </p>
+<br><br>
+
+   <strong>
+
+       <p  style="text-align: center;">DETALLE DE PROFORMA</p>
+   </strong> 
+
+    <table>
+        <thead>
+            <tr style="margin: 0; padding: 0; font-size: 11px;">
+                <td>
+                    <p>NO DE PROF.</p>
+                </td>
+                <td>
+                    <p>OFERENTE</p>
+                </td>
+                <td>
+                    <p>ESPECIFICACIONES TECNICAS</p>
+                </td>
+                <td>
+                    <p>VALOR TOTAL</p>
+                </td>
+                <td>OBSERVACION</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    1
+                </td>
+                <td>
+                    STIVEN JOSUE MANTUANO
+                </td>
+                <td>SI CUMPLE</td>
+                <td>
+                    4900.00
+                </td>
+                <td>Observaciones</td>
+            </tr>
+        </tbody>
+    </table>
+    <br><br>
+    <p>Una vez realizada la revisión de la oferta, la proforma cumple con lo solicitado.
+        Particular que informo a usted para los fines pertinentes.</p>
+    <br>
+    <p>Con sentimientos de distinguida consideración. </p>
+
+
+    <p>Atentamente,
+        ABNEGACIÓN Y DISCIPLINA</p>
+    @if (firmado) {
+        <img width="170px" src="qr_firmaec.png" alt="">
+    
+                }@else {<br><br>
+                    <p style="border-top: 1px solid; width: 300px;"></p>
+                }
+    <p>
+
+        Ing. Giancarlo O. Loaiza A.
+    </p>
+    <P>
+
+        ESPECIALISTA TICS
+    </P>
+</div>
+
+
+@if (modal) {
+    <div class="container mt-4  "  style=" position: fixed; z-index: 9999;  top: 1%; left: 10%;"  >
+        
+        <div class="d-flex "> <!-- Usar gap-2 para espacio entre botones -->
+            <button class="btn btn-danger" (click)="modal = false">X</button>
+<div style="border-radius: 10px; margin-left: 20px;">
+
+    <button class="btn btn-primary" style="margin-right: 5px;" (click)="sin_firma()">
+        <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#000000" d="M48 96l0 320c0 8.8 7.2 16 16 16l320 0c8.8 0 16-7.2 16-16l0-245.5c0-4.2-1.7-8.3-4.7-11.3l33.9-33.9c12 12 18.7 28.3 18.7 45.3L448 416c0 35.3-28.7 64-64 64L64 480c-35.3 0-64-28.7-64-64L0 96C0 60.7 28.7 32 64 32l245.5 0c17 0 33.3 6.7 45.3 18.7l74.5 74.5-33.9 33.9L320.8 84.7c-.3-.3-.5-.5-.8-.8L320 184c0 13.3-10.7 24-24 24l-192 0c-13.3 0-24-10.7-24-24L80 80 64 80c-8.8 0-16 7.2-16 16zm80-16l0 80 144 0 0-80L128 80zm32 240a64 64 0 1 1 128 0 64 64 0 1 1 -128 0z"/></svg>
+         Guardar sin firmar</button>
+    <button class="btn btn-success" (click)="con_firma()">
+        <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#000000" d="M48 96l0 320c0 8.8 7.2 16 16 16l320 0c8.8 0 16-7.2 16-16l0-245.5c0-4.2-1.7-8.3-4.7-11.3l33.9-33.9c12 12 18.7 28.3 18.7 45.3L448 416c0 35.3-28.7 64-64 64L64 480c-35.3 0-64-28.7-64-64L0 96C0 60.7 28.7 32 64 32l245.5 0c17 0 33.3 6.7 45.3 18.7l74.5 74.5-33.9 33.9L320.8 84.7c-.3-.3-.5-.5-.8-.8L320 184c0 13.3-10.7 24-24 24l-192 0c-13.3 0-24-10.7-24-24L80 80 64 80c-8.8 0-16 7.2-16 16zm80-16l0 80 144 0 0-80L128 80zm32 240a64 64 0 1 1 128 0 64 64 0 1 1 -128 0z"/></svg>
+        
+        Guardar firmado</button>
+</div>
+        </div>
+    </div>
+<div style=" height: 700px; width: 80%; background-color: gray; position: fixed ; border-radius: 10px;  top: 1%; left: 10%; z-index: 9998; overflow: scroll; ">
+
+<br>
+    <div class="a4-page" id="a4"  >
+        <div class="text-center">
+            <img class="" height="300px"
+                src="logo-alcaldia-instituciones-adscritas.png"
+                alt="">
+        </div>
+    
+        <br>
+        <div class="header " style="text-align: right;">
+            <p class="memo-number"><strong>Memorando Nro.CBM-M-TICS-2024-048</strong></p>
+            <p class="date">Machala, 12 de agosto de 2024</p>
+        </div>
+    
+        <div style="display: grid; grid-template-columns: 1fr 3fr ;">
+            <strong>
+                <p>PARA:</p>
+            </strong>
+            <p> Ing. Jacqueline Guzmán
+                Analista de Compras Públicas</p>
+        </div>
+        <br>
+        <div style="display: grid; grid-template-columns: 1fr 3fr ;">
+            <STrong>
+    
+                <p>ASUNTO</p>
+            </STrong>
+            <p>
+                PROFORMA ADQUISICION DE REPUESTOS Y MANTENIMIENTO
+                DE LOS SISTEMAS ELECTRONICOS DEL EDIFICIO DEL CUERPO
+                DE BOMBEROS MUNICIPAL DE MACHALA</p>
+        </div>
+        <br>
+        <p style="font-size: 14px;">De mi consideración:</p>
+        <p>
+            En contestación a TRÁMITE N. {{numero}} fecha {{fecha}},
+            indico a Ud. que una vez revisada la proforma adjunta, la misma que fue recibida a través
+            de la página del SERCOP, emito el siguiente detalle:
+        </p>
+    <br><br>
+    
+       <strong>
+    
+           <p  style="text-align: center;">DETALLE DE PROFORMA</p>
+       </strong> 
+    
+        <table>
+            <thead>
+                <tr style="margin: 0; padding: 0; font-size: 11px;">
+                    <td>
+                        <p>NO DE PROF.</p>
+                    </td>
+                    <td>
+                        <p>OFERENTE</p>
+                    </td>
+                    <td>
+                        <p>ESPECIFICACIONES TECNICAS</p>
+                    </td>
+                    <td>
+                        <p>VALOR TOTAL</p>
+                    </td>
+                    <td>OBSERVACION</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        1
+                    </td>
+                    <td>
+                        STIVEN JOSUE MANTUANO
+                    </td>
+                    <td>SI CUMPLE</td>
+                    <td>
+                        4900.00
+                    </td>
+                    <td>Observaciones</td>
+                </tr>
+            </tbody>
+        </table>
+        <br><br>
+        <p>Una vez realizada la revisión de la oferta, la proforma cumple con lo solicitado.
+            Particular que informo a usted para los fines pertinentes.</p>
+        <br>
+        <p>Con sentimientos de distinguida consideración. </p>
+    
+    
+        <p>Atentamente,
+            ABNEGACIÓN Y DISCIPLINA</p>
+            @if (firmado) {
+    <img width="170px" src="qr_firmaec.png" alt="">
+
+            }@else {<br><br>
+                <p style="border-top: 1px solid; width: 300px;"></p>
+            }
+    
+        <p>
+    
+            Ing. Giancarlo O. Loaiza A.
+        </p>
+        <P>
+    
+            ESPECIALISTA TICS
+        </P>
+    </div>
+</div>
+
+}
+
+@if (alerta) {
+    <div class="alert alert-danger alert-top alert-dismissible fade show" role="alert">
+        <strong>¡Error!</strong> por favor ingrese   numero de tramite y fecha 
+        <button type="button" class="btn-close" (click)="alerta =false" aria-label="Close"></button>
+    </div>
+}
+
+
+

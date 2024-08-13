@@ -1,0 +1,12 @@
+.centered-card {
+    height: 100vh;
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
+.card:hover{
+    background-color: rgb(104, 97, 137);
+
+    color: white;
+}

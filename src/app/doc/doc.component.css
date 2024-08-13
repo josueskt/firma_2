@@ -1,0 +1,129 @@
+@page {
+    size: A4;
+    margin: 20mm;
+}
+
+* {
+    margin: 0;
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.a4-page {
+    width: 210mm;
+    height: 297mm;
+    margin: 0 auto;
+    padding: 15mm;
+    padding-top: 0px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    box-sizing: border-box;
+    border: solid 2px;
+
+
+
+    
+}
+.container-custom {
+    display: flex;
+    justify-content: space-between; /* Distribuye el espacio entre los botones */
+    align-items: center; /* Alinea verticalmente los botones */
+}
+
+.cuerpo {
+    font-size: 12px;
+
+}
+
+.cabeza {
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr 1fr;
+
+}
+
+.cabeza>.celdas {
+
+
+    border: 1px solid black;
+
+}
+
+.cabeza>.celdas>.datos {
+
+
+    border-top: 1px solid black;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 12px;
+}
+
+.celdas img {
+    display: block;
+
+    margin: 0 auto;
+}
+
+table {
+    border-collapse: collapse;
+    margin-top: 20px;
+    width: 100%;
+}
+
+th,
+td {
+    border: 1px solid black;
+    
+    text-align: left;
+    font-size: 11px;
+}
+
+th {
+    background-color: #b9b9b9;
+   
+}
+
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+
+
+
+td.firma {
+    height: 50px;
+    width: 200px;
+}
+hr {
+width: 50%; /* Define el ancho como el 50% del contenedor padre */
+margin: 20px auto; /* Centra horizontalmente con un margen automático */
+border: 1px solid black; /* Define el estilo del borde */
+}
+.blanco{
+    background-color: white;
+}
+
+@media print {
+
+    body,
+    .a4-page {
+        width: 210mm;
+        height: 290mm;
+        margin: 0;
+        box-shadow: none;
+    }
+}
+.alert-top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1050; /* Asegura que esté sobre otros contenidos */
+}

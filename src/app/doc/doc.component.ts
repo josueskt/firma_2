@@ -12,8 +12,8 @@ import html2canvas from 'html2canvas';
   styleUrl: './doc.component.css'
 })
 export class DocComponent {
-numero = ''
-fecha = ''
+numero = '1'
+fecha = '1'
 modal = false
 alerta = false
 firmado = false

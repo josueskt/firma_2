@@ -111,10 +111,13 @@
 
 
 @if (modal) {
-    <div class="container mt-4  "  style=" position: fixed; z-index: 9999;  top: 1%; left: 10%;"  >
+    <div class="container mt-4  "  style=" position: fixed; z-index: 9999;  top: 1%; left: 17%;"  >
         
-        <div class="d-flex "> <!-- Usar gap-2 para espacio entre botones -->
-            <button class="btn btn-danger" (click)="modal = false">X</button>
+        <div class="d-flex " style="background-color: rgba(0, 0, 0, 0.616); width: 40%; height: 50px; border-radius: 15px; padding-top: 6px; padding-left: 20px;"> 
+            <div>
+
+                <button class="btn btn-danger" (click)="modal = false">X</button>
+            </div><!-- Usar gap-2 para espacio entre botones -->
 <div style="border-radius: 10px; margin-left: 20px;">
 
     <button class="btn btn-primary" style="margin-right: 5px;" (click)="sin_firma()">
@@ -127,7 +130,7 @@
 </div>
         </div>
     </div>
-<div style=" height: 700px; width: 80%; background-color: gray; position: fixed ; border-radius: 10px;  top: 1%; left: 10%; z-index: 9998; overflow: scroll; ">
+<div style=" height: 700px; width: 80%; background-color: rgba(0, 0, 0, 0.619); position: fixed ; border-radius: 10px;  top: 0%; left: 10%; z-index: 9998; overflow: scroll; ">
 
 <br>
     <div class="a4-page" id="a4"  >

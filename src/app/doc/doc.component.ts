@@ -14,6 +14,7 @@ import html2canvas from 'html2canvas';
 export class DocComponent {
 numero = ''
 fecha = ''
+loader = false
 modal = false
 alerta = false
 firmado = false
@@ -27,12 +28,22 @@ hola(){
   }
 }
 con_firma(){
-  this.firmado = true
+  this.firmado = true;
   if(this.firmado){
+    this.loader = true
+     setTimeout(() => {
+      this.generatePDF('a4');
+    }, 2000)
+    setTimeout(() => {
+  this.firmado = false;
+this.loader = false
+    }, 3000);
     
-    this.generatePDF('a4')
+ 
+
   }
 }
+
 sin_firma(){
 
   this.firmado = false

@@ -18,8 +18,11 @@ loader = false
 modal = false
 alerta = false
 firmado = false
+texto_detalle = ''
+fecha_dos  =''
 hola(){
-  if(this.numero && this.fecha){
+
+  if(this.numero && this.fecha && this.texto_detalle && this.fecha_dos){
 
     this.modal  =true
   } else

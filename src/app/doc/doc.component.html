@@ -14,7 +14,7 @@
     <br>
     <div class="header " style="text-align: right;">
         <p class="memo-number"><strong>Memorando Nro.CBM-M-TICS-2024-048</strong></p>
-        <p class="date">Machala, 12 de agosto de 2024</p>
+        <p class="date">Shushufindi, <input [(ngModel)]="fecha_dos" type="date"></p>
     </div>
 
     <div style="display: grid; grid-template-columns: 1fr 3fr ;">
@@ -47,43 +47,12 @@
 
    <strong>
 
-       <p  style="text-align: center;">DETALLE DE PROFORMA</p>
+       <p  style="text-align: center;">DETALLE DEL ASUNTO</p>
    </strong> 
 
-    <table>
-        <thead>
-            <tr style="margin: 0; padding: 0; font-size: 11px;">
-                <td>
-                    <p>NO DE PROF.</p>
-                </td>
-                <td>
-                    <p>OFERENTE</p>
-                </td>
-                <td>
-                    <p>ESPECIFICACIONES TECNICAS</p>
-                </td>
-                <td>
-                    <p>VALOR TOTAL</p>
-                </td>
-                <td>OBSERVACION</td>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>
-                    1
-                </td>
-                <td>
-                    STIVEN JOSUE MANTUANO
-                </td>
-                <td>SI CUMPLE</td>
-                <td>
-                    4900.00
-                </td>
-                <td>Observaciones</td>
-            </tr>
-        </tbody>
-    </table>
+<textarea  [(ngModel)]="texto_detalle" style="width: 100%; height: 150px;" name="" id="">
+
+</textarea>
     <br><br>
     <p>Una vez realizada la revisión de la oferta, la proforma cumple con lo solicitado.
         Particular que informo a usted para los fines pertinentes.</p>
@@ -143,7 +112,7 @@
         <br>
         <div class="header " style="text-align: right;">
             <p class="memo-number"><strong>Memorando Nro.CBM-M-TICS-2024-048</strong></p>
-            <p class="date">Machala, 12 de agosto de 2024</p>
+            <p class="date">Shushufindi, {{fecha_dos}}</p>
         </div>
     
         <div style="display: grid; grid-template-columns: 1fr 3fr ;">
@@ -175,43 +144,10 @@
     
        <strong>
     
-           <p  style="text-align: center;">DETALLE DE PROFORMA</p>
+           <p  style="text-align: center;">DETALLE DEL ASUNTO</p>
        </strong> 
     
-        <table>
-            <thead>
-                <tr style="margin: 0; padding: 0; font-size: 11px;">
-                    <td>
-                        <p>NO DE PROF.</p>
-                    </td>
-                    <td>
-                        <p>OFERENTE</p>
-                    </td>
-                    <td>
-                        <p>ESPECIFICACIONES TECNICAS</p>
-                    </td>
-                    <td>
-                        <p>VALOR TOTAL</p>
-                    </td>
-                    <td>OBSERVACION</td>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>
-                        1
-                    </td>
-                    <td>
-                        STIVEN JOSUE MANTUANO
-                    </td>
-                    <td>SI CUMPLE</td>
-                    <td>
-                        4900.00
-                    </td>
-                    <td>Observaciones</td>
-                </tr>
-            </tbody>
-        </table>
+        <p>{{texto_detalle}}</p>
         <br><br>
         <p>Una vez realizada la revisión de la oferta, la proforma cumple con lo solicitado.
             Particular que informo a usted para los fines pertinentes.</p>
@@ -257,3 +193,6 @@
       </div>
 }
 
+detalle del asunto  
+tex area 
+Shushufindi y agregar imput de tipo 
